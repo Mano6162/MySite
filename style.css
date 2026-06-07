@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    line-height:1.6;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#222;
+    color:white;
+    position:absolute;
+    width:100%;
+    top:0;
+}
+
+.logo{
+    font-size:30px;
+    padding:0px;
+    margin:10px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:10px;
+    padding:10px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#00bcd4;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:15px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#00bcd4;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    color:red;
+}
+
+/* Sections */
+
+.section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+/* Contact Form */
+
+.contact-form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.contact-form button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#00bcd4;
+    color:white;
+    cursor:pointer;
+}
+.contact-form button:hover{
+    color:red;
+}
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:65px;
+        left:-100%;
+        width:100%;
+        background:#333;
+        flex-direction:column;
+        text-align:center;
+        transition:0.3s;
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+
+    .nav-links li{
+        margin:15px 0;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
