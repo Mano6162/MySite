@@ -39,6 +39,7 @@ body{
     display:flex;
     list-style:none;
     align-items:center;
+    margin-left:auto;
 }
 
 .nav-links li{
@@ -153,7 +154,7 @@ footer{
 @media(max-width:768px){
 
     .menu-btn{
-        display:white;
+        display: none;
     }
 
     .nav-links{
