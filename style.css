@@ -154,30 +154,24 @@ footer{
 @media(max-width:768px){
 
     .menu-btn{
-        display: none;
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
     }
 
     .nav-links{
+        display:none;
         position:absolute;
         top:70px;
-        left:-100%;
-        width:100%;
+        right:0;
+        width:200px;
         background:#333;
         flex-direction:column;
         text-align:center;
-        transition:0.3s;
-        padding:20px 0;
     }
 
     .nav-links.active{
-        left:0;
-    }
-
-    .hero h1{
-        font-size:2.2rem;
-    }
-
-    .hero p{
-        font-size:1rem;
+        display:flex;
     }
 }
