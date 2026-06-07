@@ -39,7 +39,6 @@ body{
     display:flex;
     list-style:none;
     align-items:center;
-    margin-left:auto;
 }
 
 .nav-links li{
@@ -151,27 +150,38 @@ footer{
 }
 
 /* Mobile Responsive */
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-    .menu-btn{
-    display:none;
-    font-size:28px;
-    cursor:pointer;
-}
+    .navbar{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo{
+        margin-bottom: 10px;
     }
 
     .nav-links{
-        display:none;
-        position:absolute;
-        top:70px;
-        right:0;
-        width:200px;
-        background:#333;
-        flex-direction:column;
-        text-align:center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
     }
 
-    .nav-links.active{
-        display:flex;
+    .nav-links li{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .hero h1{
+        font-size: 2.2rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .section{
+        padding: 80px 5%;
     }
 }
