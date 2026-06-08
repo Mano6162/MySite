@@ -55,6 +55,10 @@ body{
 .nav-links a:hover{
     color:#00bcd4;
 }
+.nav-links a.active{
+    color:#00bcd4;
+    font-weight:bold;
+}
 
 /* Hero Section */
 
@@ -76,7 +80,7 @@ body{
     padding:20px;
 }
 .hero h1{
-    font-size:3.5rem;
+    font-size:3rem;
     margin-bottom:15px;
 }
 
@@ -147,6 +151,18 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
+}
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #00bcd4;
+    color: white;
 }
 
 /* Mobile Responsive */
